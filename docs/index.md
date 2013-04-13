@@ -1,21 +1,29 @@
-LinkTweaker User Guide
+PSRenamer User Guide
 ======================
 
-## Introduction
+## Table of Contents
 
-LinkTweaker adjusts URLs (aka hyperlinks) to make them both more useful and more usable. 
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#sysrqmts">System Requirements</a></li>
+<li><a href="#rights">Rights</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#ui">User Interface</a></li>
+</ul>
 
-LinkTweaker's operation is based on the philosophy that URLs should point a Web browser to a specific address, but should also tell a human user where a resource is located, so that said user can navigate to that resource through other means as well. To this end, LinkTweaker converts as many escape sequences as practical back to their original characters (changing a "%2F" back to a simple slash, for example), as well as removing other cruft and detritus that may have attached itself to a link somewhere along its journey. 
+<h2 id="introduction">Introduction</h2>
 
-## System Requirements
+PSRenamer is a tool for renaming a group of files. The files to be renamed must all reside in the top level of an existing folder. 
 
-LinkTweaker is written in Java and can run on any reasonably modern operating system, including Mac OS X, Windows and Linux. LinkTweaker requires a Java Runtime Environment (JRE), also known as a Java Virtual Machine (JVM). The version of this JRE/JVM must be at least 6. Visit [www.java.com][java] to download a recent version for most operating systems. Installation happens a bit differently under Mac OS X, but generally will occur fairly automatically when you try to launch a Java app for the first time.  
+<h2 id="sysrqmts">System Requirements</h2>
 
-## Rights
+PSRenamer is written in Java and can run on any reasonably modern operating system, including Mac OS X, Windows and Linux. PSRenamer requires a Java Runtime Environment (JRE), also known as a Java Virtual Machine (JVM). The version of this JRE/JVM must be at least 6. Visit [www.java.com][java] to download a recent version for most operating systems. Installation happens a bit differently under Mac OS X, but generally will occur fairly automatically when you try to launch a Java app for the first time.  
 
-LinkTweaker Copyright &copy; 2012 - 2013 Herb Bowie
+<h2 id="rights">Rights</h2>
 
-LinkTweaker is [open source software][osd]. 
+PSRenamer Copyright &copy; 2003 - 2013 Herb Bowie
+
+PSRenamer is [open source software][osd]. 
 
 Licensed under the Apache License, Version 2.0 (the &#8220;License&#8221;); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
@@ -27,49 +35,114 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-LinkTweaker also incorporates or adapts the following open source software libraries. 
+PSRenamer also incorporates or adapts the following open source software libraries. 
 
 * BrowserLauncher2 &#8212; Copyright 2004 - 2007 Markus Gebhard, Jeff Chapman, used under the terms of the [GNU General Public License][gnu]. 
 
-## Installation
+<h2 id="installation">Installation</h2>
 
 Download the latest version from [PowerSurgePub.com][downloads]. Decompress the downloaded file. Drag the resulting file or folder into the location where you normally store your applications. 
 
-## User Interface
+<h2 id="ui">User Interface</h2>
 
-LinkTweaker has a straightforward user interface consisting of the following elements. 
+PSRenamer has a straightforward user interface consisting of the following elements. 
+
+### Set Folder button 
+
+Pressing this button will produce a dialog box allowing you to select the folder containing the files to be renamed. The folder you select here will then appear in the Folder Path text box below. The same dialog box can be invoked using the File/Open menu item.
+
+### Preview button 
+
+Pressing this button will produce a preview of the files to be renamed in the Details window below, based on the criteria you have entered. Note that pressing this button before entering any criteria will produce a list of all the files in the selected folder. 
+
+### Rename button 
+
+Pressing this button will actually rename the selected files according to the criteria you have specified. All the details of the renaming activity will be listed in the Details window below. 
+
+### Undo button 
+
+If, immediately after pressing the Rename button, a review of the Details window reveals that you have done something other than what you intended, pressing this button will cause the file names to revert to their previous values. 
+
+### Folder Path 
+
+This indicates the folder containing the files you wish to rename. This will initially default to the folder containing the PSRenamer program. You may type or paste a path directly into this field. You may also set it using the Set Folder button above. 
+
+### Find 
+
+Note that there are four occurrences of this field and the next four. You may use any or all of these rows, depending on the complexity of the operation you wish to perform. 
+
+Enter a value in the Find column to indicate the text value you wish to replace, or simply a value you wish to use as part of your selection criteria, if no Action is specified. If the Where field for this row is set to Equals, then an asterisk in this column will cause all file names to be selected. 
+
+### Case 
+
+Check this box if you wish the Find value to be compared to your file names in a case-sensitive manner. Leaving this box unchecked will ignore differences in capitalization of letters. 
+
+### Where 
+
+Select the location in the file names where you want the preceding Find value to be located. This can have one of five values. Note that each row initially defaults to a different one of these values. You may use as many of these as you like, and may change any of the rows to different values in this column. The allowable values are as follows.
 
 <dl>
-	<dt>Input Link:</dt>
-		<dd>Enter the link to be tweaked. Usually you would copy this information from a field in another app, and then paste it into this field. </dd>
-		
-	<dt>Output Link:</dt>
-		<dd>This is the resulting link, after the tweaking has occurred. It may or may not be different than the input, and it may or may not still perform the same function. Always test the link before relying on it.  </dd>
-		
-	<dt>Remove SharePoint Cruft?</dt>
-		<dd>When copying a link from Internet Explorer while navigating a SharePoint site, the copied link often seems to contain a great deal of additional, optional and apparently quite useless information. Checking this box will cause LinkTweaker to try to remove this stuff, resulting in a shorter and more straightforward hyperlink. </dd>
-		
-	<dt>Insert Redirect?</dt>
-		<dd>In some cases, especially while inside a corporate firewall, it may be necessary to insert some sort of redirecting URL in order to successfully navigate to your ultimate destination. You will need to enter your redirect URL in the Preferences pane. Once doing so, checking this box will cause the redirect to be inserted before the Input Link.  </dd>
-		
-	<dt>Show spaces as spaces?</dt>
-		<dd>In order to avoid corruption, especially when being relayed via email, spaces in hyperlinks are often converted to "%20" strings. Checking this box will convert these strings back to spaces, which will generally make the link more readable (but less durable). This may be useful as a temporary setting, just to see the elements of your URL as they would normally appear in a file or web browser.   </dd>
-		
-	<dt>Tweak</dt>
-		<dd>Pressing this button will cause the tweaking logic to be applied to the Input Link, producing a new Output Link. However, since this operation is also triggered by most of your other actions in the user interface, it may not be strictly necessary to press this button.   </dd>
-		
-	<dt>Launch</dt>
-		<dd>Pressing this button will cause the Output Link to be launched, using your favorite Web browser. This should be done to test the Output Link, to ensure it actually takes the user to your desired location.  </dd>
-		
-	<dt>Copy</dt>
-		<dd>Pressing this button will cause the Output Link to be copied to the system clipboard, so that your next paste will place the Output Link into a new location.  </dd>
+	<dt>Begins With</dt>
+
+		<dd>The Find value will only be located if it is at the very beginning of a file name. </dd>
+
+	<dt>Contains</dt>
+
+		<dd>The Find value will be located anywhere within a file name (but not within the file extension). </dd>
+
+	<dt>Ends With</dt>
+
+		<dd>The Find value will only be located if it is at the very end of a file name, but prior to the file extension. </dd>
+
+	<dt>Equals</dt>
+
+		<dd>The Find value will only be located if it is equal to the entire file name, ignoring the file extension and the period preceding the file extension. If this value is selected, then an asterisk in the Find column will match any and all file names.</dd>
+
+	<dt>File Extension</dt>
+
+		<dd>The Find value will only be located if it is a complete file extension.</dd> 
 </dl>
 
-[java]:       http://www.java.com/
+### New Value 
 
+This is the new value you wish to have replace the Find value. The exact case (upper/lower) of this text will be used as you enter it. 
+
+Note that if you replace the entire file names for a group of files with a constant value, then this program will treat the new file name (preceding the extension) as a starting value for the first file, and will then increment that value by 1 for each succeeding file, so long as the file name ends with a digit or a letter. Note that, for this feature to work, all files selected must have the same extension.
+
+### Action 
+
+Select the action you wish to have performed. This can have one of the following values. 
+
+<dl>
+	<dt>Replace</dt>
+
+		<dd>The New value will replace the Find value.</dd> 
+
+	<dt>Replace Chars</dt> 
+
+		<dd>When used in conjunction with the Contains option, the characters in the New Value string will replace the characters in corresponding positions of the Find string. The character 'b' in the Find string will be interpreted as a blank (aka space). The caret character ('^') in the New Value string will cause any occurrences of the corresponding character in the Find string to be removed, with no replacement character.</dd> 
+
+	<dt>Insert Before</dt>
+
+		<dd>The New value will be inserted just before the Find value. </dd>
+
+	<dt>Insert After</dt>
+
+		<dd>The New value will be inserted just after the Find value. </dd>
+
+	<dt>Do Nothing</dt>
+
+		<dd>The Find value will be used to select file names to be acted upon, but no change will be made to or around this Find value. </dd>
+		
+</dl>
+
+### Details 
+
+The results of pressing the Preview, Rename or Undo buttons will be shown here, along with any error messages. Files will not be renamed if the new name of the file already exists, unless the new name is to be renamed as well, in which case the sequence of renames will proceed in an order that will allow the collisions to be renamed first.
+
+[java]:       http://www.java.com/
 [pspub]:      http://www.powersurgepub.com/
 [downloads]:  http://www.powersurgepub.com/downloads.html
-
 [osd]:				http://opensource.org/osd
 [gnu]:        http://www.gnu.org/licenses/
 [apache]:			http://www.apache.org/licenses/LICENSE-2.0.html

@@ -1,23 +1,23 @@
-<<output "../../../../../Sites/powersurgepub/web/products/psrenamer/versions.html">>
+<?output "../../../../../Sites/powersurgepub/web/products/psrenamer/versions.html"?>
 <!-- #bbinclude "pspub_header.html"
 #pagetitle#="PSRenamer Version History"
 -->
 <!-- end bbinclude -->
 <p class="first">To download the latest version, visit our <a href="http://www.powersurgepub.com/downloads.html#psrenamer">Downloads</a> page. </p>
 
-<<nextrec>>
-<<definegroup 1 "<<sequence>>">>
-<<ifendgroup 1>>
+<?nextrec?>
+<?definegroup 1 "=$sequence$="?>
+<?ifendgroup 1?>
 </ol>
-<<ifnewgroup 1>>
+<?ifnewgroup 1?>
 <h3>Version =$sequence$= (=$duedateymd$=)</h3>
 <ol>
-<<endif>>
-<<if <<status>> gt 5>>
+<?endif?>
+<?if =$status$= gt 5?>
 <li><p><strong>=$title$=</strong> <br />
 =$outcome$=</p></li>
-<<endif>>
-<<loop>>
+<?endif?>
+<?loop?>
 
 <!-- #bbinclude "pspub_footer.html"
 -->

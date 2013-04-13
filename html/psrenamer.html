@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>PSRenamer User Guide</title>
+	<style type="text/css" title="text/css">
+      @import url(styles.css);
+  </style>
+</head>
+<body>
+<h1 id="psrenameruserguide">PSRenamer User Guide</h1>
+
+<h2 id="tableofcontents">Table of Contents</h2>
+
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#sysrqmts">System Requirements</a></li>
+<li><a href="#rights">Rights</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#ui">User Interface</a></li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>PSRenamer is a tool for renaming a group of files. The files to be renamed must all reside in the top level of an existing folder. </p>
+
+<h2 id="sysrqmts">System Requirements</h2>
+
+<p>PSRenamer is written in Java and can run on any reasonably modern operating system, including Mac OS X, Windows and Linux. PSRenamer requires a Java Runtime Environment (JRE), also known as a Java Virtual Machine (JVM). The version of this JRE/JVM must be at least 6. Visit <a href="http://www.java.com/">www.java.com</a> to download a recent version for most operating systems. Installation happens a bit differently under Mac OS X, but generally will occur fairly automatically when you try to launch a Java app for the first time. </p>
+
+<h2 id="rights">Rights</h2>
+
+<p>PSRenamer Copyright &copy; 2003 - 2013 Herb Bowie</p>
+
+<p>PSRenamer is <a href="http://opensource.org/osd">open source software</a>. </p>
+
+<p>Licensed under the Apache License, Version 2.0 (the &#8220;License&#8221;); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+
+<pre><code>http://www.apache.org/licenses/LICENSE-2.0
+</code></pre>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &#8220;AS IS&#8221; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+
+<p>PSRenamer also incorporates or adapts the following open source software libraries. </p>
+
+<ul>
+<li>BrowserLauncher2 &#8212; Copyright 2004 - 2007 Markus Gebhard, Jeff Chapman, used under the terms of the <a href="http://www.gnu.org/licenses/">GNU General Public License</a>.</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Download the latest version from <a href="http://www.powersurgepub.com/downloads.html">PowerSurgePub.com</a>. Decompress the downloaded file. Drag the resulting file or folder into the location where you normally store your applications. </p>
+
+<h2 id="ui">User Interface</h2>
+
+<p>PSRenamer has a straightforward user interface consisting of the following elements. </p>
+
+<h3 id="setfolderbutton">Set Folder button</h3>
+
+<p>Pressing this button will produce a dialog box allowing you to select the folder containing the files to be renamed. The folder you select here will then appear in the Folder Path text box below. The same dialog box can be invoked using the File/Open menu item.</p>
+
+<h3 id="previewbutton">Preview button</h3>
+
+<p>Pressing this button will produce a preview of the files to be renamed in the Details window below, based on the criteria you have entered. Note that pressing this button before entering any criteria will produce a list of all the files in the selected folder. </p>
+
+<h3 id="renamebutton">Rename button</h3>
+
+<p>Pressing this button will actually rename the selected files according to the criteria you have specified. All the details of the renaming activity will be listed in the Details window below. </p>
+
+<h3 id="undobutton">Undo button</h3>
+
+<p>If, immediately after pressing the Rename button, a review of the Details window reveals that you have done something other than what you intended, pressing this button will cause the file names to revert to their previous values. </p>
+
+<h3 id="folderpath">Folder Path</h3>
+
+<p>This indicates the folder containing the files you wish to rename. This will initially default to the folder containing the PSRenamer program. You may type or paste a path directly into this field. You may also set it using the Set Folder button above. </p>
+
+<h3 id="find">Find</h3>
+
+<p>Note that there are four occurrences of this field and the next four. You may use any or all of these rows, depending on the complexity of the operation you wish to perform. </p>
+
+<p>Enter a value in the Find column to indicate the text value you wish to replace, or simply a value you wish to use as part of your selection criteria, if no Action is specified. If the Where field for this row is set to Equals, then an asterisk in this column will cause all file names to be selected. </p>
+
+<h3 id="case">Case</h3>
+
+<p>Check this box if you wish the Find value to be compared to your file names in a case-sensitive manner. Leaving this box unchecked will ignore differences in capitalization of letters. </p>
+
+<h3 id="where">Where</h3>
+
+<p>Select the location in the file names where you want the preceding Find value to be located. This can have one of five values. Note that each row initially defaults to a different one of these values. You may use as many of these as you like, and may change any of the rows to different values in this column. The allowable values are as follows.</p>
+
+<dl>
+    <dt>Begins With</dt>
+
+        <dd>The Find value will only be located if it is at the very beginning of a file name. </dd>
+
+    <dt>Contains</dt>
+
+        <dd>The Find value will be located anywhere within a file name (but not within the file extension). </dd>
+
+    <dt>Ends With</dt>
+
+        <dd>The Find value will only be located if it is at the very end of a file name, but prior to the file extension. </dd>
+
+    <dt>Equals</dt>
+
+        <dd>The Find value will only be located if it is equal to the entire file name, ignoring the file extension and the period preceding the file extension. If this value is selected, then an asterisk in the Find column will match any and all file names.</dd>
+
+    <dt>File Extension</dt>
+
+        <dd>The Find value will only be located if it is a complete file extension.</dd>
+</dl>
+
+<h3 id="newvalue">New Value</h3>
+
+<p>This is the new value you wish to have replace the Find value. The exact case (upper/lower) of this text will be used as you enter it. </p>
+
+<p>Note that if you replace the entire file names for a group of files with a constant value, then this program will treat the new file name (preceding the extension) as a starting value for the first file, and will then increment that value by 1 for each succeeding file, so long as the file name ends with a digit or a letter. Note that, for this feature to work, all files selected must have the same extension.</p>
+
+<h3 id="action">Action</h3>
+
+<p>Select the action you wish to have performed. This can have one of the following values. </p>
+
+<dl>
+    <dt>Replace</dt>
+
+        <dd>The New value will replace the Find value.</dd>
+
+    <dt>Replace Chars</dt>
+
+        <dd>When used in conjunction with the Contains option, the characters in the New Value string will replace the characters in corresponding positions of the Find string. The character 'b' in the Find string will be interpreted as a blank (aka space). The caret character ('^') in the New Value string will cause any occurrences of the corresponding character in the Find string to be removed, with no replacement character.</dd>
+
+    <dt>Insert Before</dt>
+
+        <dd>The New value will be inserted just before the Find value. </dd>
+
+    <dt>Insert After</dt>
+
+        <dd>The New value will be inserted just after the Find value. </dd>
+
+    <dt>Do Nothing</dt>
+
+        <dd>The Find value will be used to select file names to be acted upon, but no change will be made to or around this Find value. </dd>
+
+</dl>
+
+<h3 id="details">Details</h3>
+
+<p>The results of pressing the Preview, Rename or Undo buttons will be shown here, along with any error messages. Files will not be renamed if the new name of the file already exists, unless the new name is to be renamed as well, in which case the sequence of renames will proceed in an order that will allow the collisions to be renamed first.</p>
+
+</body>
+</html>
