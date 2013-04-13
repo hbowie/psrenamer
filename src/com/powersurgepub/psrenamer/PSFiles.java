@@ -1,7 +1,17 @@
 /*
- * PSFiles.java
+ * Copyright 2003 - 2013 Herb Bowie
  *
- * Created on June 15, 2003, 5:29 PM
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 package com.powersurgepub.psrenamer;
@@ -12,25 +22,6 @@ package com.powersurgepub.psrenamer;
   /** 
    A collection of files contained within a given directory.
    
-   This code is copyright (c) 2003 by Herb Bowie of PowerSurge Publishing. 
-   All rights reserved. <p>
-   
-   Version History: <ul><li>
-  		2003/06/15 - Initially created.
-      </ul>
-  
-   @author Herb Bowie (<a href="mailto:herb@powersurgepub.com">
-           herb@powersurgepub.com</a>)<br>
-           of PowerSurge Publishing (<A href="http://www.powersurgepub.com">
-           www.powersurgepub.com</a>)
-  
-  @version 
-      2003/07/15 - Modified to add support for new EQUALS location
-                   and FIND_ANY findValue, and to look for duplicate
-                   file names and vary them by incrementing the trailing
-                   digits or letters of the names.
-   
-   @version 06/15/2003 -- First created.
    */
   public class PSFiles {
   

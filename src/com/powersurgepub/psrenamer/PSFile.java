@@ -1,7 +1,17 @@
 /*
- * PSFile.java
+ * Copyright 2003 - 2013 Herb Bowie
  *
- * Created on June 15, 2003, 7:30 AM
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 package com.powersurgepub.psrenamer;
@@ -12,27 +22,6 @@ package com.powersurgepub.psrenamer;
 /** 
   An extension of the File class that supports desired
   partial name comparisons.
- 
-   This code is copyright (c) 2003-2004 by Herb Bowie of PowerSurge Publishing. 
-   All rights reserved. <p>
-   
-   Version History: <ul><li>
-      2003/07/14 - Modified to add support for new EQUALS location
-                   and FIND_ANY findValue, and for incrementing
-                   file names. <li>
-  		2003/06/21 - Initially created.
-      </ul>
-  
-   @author Herb Bowie (<a href="mailto:herb@powersurgepub.com">
-           herb@powersurgepub.com</a>)<br>
-           of PowerSurge Publishing (<A href="http://www.powersurgepub.com">
-           www.powersurgepub.com</a>)
-  
-  @version 
-      2004/06/20 - Modified to add a "Replace Chars" option that interprets
-                   the replacement string as a string of characters, with 
-                   each character corresponding to a character in the
-                   search string.
  */
 public class PSFile extends java.io.File {
   

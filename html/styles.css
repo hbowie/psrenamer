@@ -1,0 +1,268 @@
+body
+{
+	color: #000000;
+	text-align: left;
+	font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif;
+	/* font-family:  */
+	font-size: 11pt;
+	line-height: 16pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	margin: 10pt;
+}
+a:link {
+	color: #000099;
+	text-decoration: underline;
+}
+a:active {
+	color: #880000;
+	text-decoration: underline;
+}
+a:visited {
+	color: #663399;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000066;
+	text-decoration: underline;
+} 
+
+.normal {
+
+}
+
+.first {
+	padding-top: 0pt;
+	margin-top: 3pt;
+}
+.center {
+	text-align: center
+}
+.right {
+	text-align: right
+}
+.small {
+	font-size: 9pt;
+	line-height: 12pt;
+}
+
+#toc-div ul li li { margin-top: 0px; }
+
+#toc-div a:link {
+	color: #000;
+	text-decoration: none;
+}
+#toc-div a:active {
+	color: #000;
+	text-decoration: none;
+}
+#toc-div a:visited {
+	color: #000;
+	text-decoration: none;
+}
+#toc-div a:hover
+{
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px gray dashed;
+}
+
+
+table.navTable {
+	background-color: #330099;
+}
+table.trad {
+	background-color: #880000;
+}
+td.clear { background-color: #FFFFFF; }
+td.navButton {
+	background-color: #DDDDEE;
+	color: #880000;
+	font-size: 10pt;
+	line-height: 12pt;
+	text-align: left;
+	font-weight: 500;
+}
+a.navLink:link {
+	color: #000066;
+	text-decoration: none;
+	font-weight: 500;
+}
+a.navLink:active {
+	color: #000066;
+	text-decoration: none;
+	font-weight: 400;
+}
+a.navLink:visited {
+	color: #000066;
+	text-decoration: none;
+	font-weight: 400;
+}
+a.navLink:hover {
+	color: #000066;
+	text-decoration: underline;
+	font-weight: 500;
+}
+h1 { /* Page Headings */
+	color: #880000;
+	font-size: 18pt;
+	line-height: 24pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+h2 {
+	color: #880000;
+	font-size: 16pt;
+	line-height: 22pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	margin-bottom: 3pt; 
+	padding-bottom: 0pt;
+}
+h3 { /* Normal Page Sub-Headings */
+	color: #880000;
+	font-size: 14pt;
+	line-height: 18pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	margin-bottom: 3pt; 
+	padding-bottom: 0pt;
+}
+h4 {
+	color: #880000;
+	font-size: 13pt;
+	line-height: 17pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;
+	margin-bottom: 3pt; 
+	padding-bottom: 0pt;
+}
+h5 {
+	color: #880000;
+	font-size: 12pt;
+	line-height: 16pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	margin-bottom: 3pt; 
+	padding-bottom: 0pt;
+}
+a.head:link {
+	color: #880000;
+	text-decoration: none;
+}
+a.head:active {
+	color: #880000;
+	text-decoration: underline;
+}
+a.head:visited {
+	color: #880000;
+	text-decoration: none;
+}
+a.head:hover {
+	color: #000099;
+	text-decoration: underline;
+}
+
+table { 
+	background-color: #FFFFFF; 
+	margin-top: 1em; 
+}
+
+th {
+	font-weight: 600;
+	text-align: left;
+	vertical-align: bottom;
+	background-color: #FFFFFF;
+	padding: 4px;
+}
+td {
+	text-align: left;
+	vertical-align: top;
+	background-color: #FFFFFF;
+	padding: 4px;
+}
+td.middle {
+	text-align: left;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+table.graybox { background-color: #666666; }
+
+th.graybox { background-color: #CCCCCC; 
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	line-height: 14pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 600;}
+
+td.graybox { background-color: #FFFFFF; 
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	line-height: 14pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;}
+
+ol li { margin-top: 12pt; }
+
+ul li { margin-top: 12pt; }
+
+ul li.compact { 
+	margin-top: 0pt; 
+	margin-left: 0pt;
+	text-indent: 0pt;
+	padding-left: 0pt;
+	border-left: 0pt;
+}
+
+dl dt { 
+	margin-top: 12pt; 
+	font-weight: 600;
+}
+
+dl dd { margin-top: 12pt; }
+
+span.command { color: #000099; }
+span.variable { color: #880000; }
+
+table.shaded { background-color: #436098; margin-top: 1em; }
+
+th.shaded
+{
+	background-color: #D0DFF5;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 4px;
+}
+
+th.shadedCentered
+{
+	background-color: #D0DFF5;
+	text-align: center;
+	vertical-align: bottom;
+	padding: 4px;
+}
+
+td.shaded
+{
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	padding: 4px;
+}
+
+td.shadedCentered
+{
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+}

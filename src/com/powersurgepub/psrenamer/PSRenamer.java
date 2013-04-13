@@ -1,7 +1,17 @@
-/**
- * PSrenamer.java
+/*
+ * Copyright 2003 - 2013 Herb Bowie
  *
- * Created on June 9, 2003, 10:35 AM
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 package com.powersurgepub.psrenamer;
@@ -17,31 +27,7 @@ package com.powersurgepub.psrenamer;
   import com.powersurgepub.xos2.*;
 
 /**
-   A GUI program to rename a group of files. See the help.html file for further
-   information on program operation. <p>
-   
-   This code is copyright (c) 2003-2004 by Herb Bowie of PowerSurge Publishing. 
-   All rights reserved. <p>
-   
-   Version History: <ul><li>
-      2003/07/16 - Modified to add an EQUALS value for location,
-                   and a FIND_ANY value for findValue. In conjunction,
-                   these will allow an entire file name to be
-                   replaced. Also modified to automatically increment
-                   duplicate file names to make each unique. <li>
-  		2003/06/21 - Initial creation.
-      </ul>
-  
-   @author Herb Bowie (<a href="mailto:herb@powersurgepub.com">
-           herb@powersurgepub.com</a>)<br>
-           of PowerSurge Publishing (<A href="http://www.powersurgepub.com">
-           www.powersurgepub.com</a>)
-  
-   @version 
-      2004/06/20 - Modified to add a "Replace Chars" option that interprets
-                   the replacement string as a string of characters, with 
-                   each character corresponding to a character in the
-                   search string.
+   A GUI program to rename a group of files. 
  */
   
   public class PSRenamer 
@@ -49,7 +35,7 @@ package com.powersurgepub.psrenamer;
         implements XHandler {
     
     public  static final String     PROGRAM_NAME    = "PSRenamer";
-    public  static final String     PROGRAM_VERSION = "1.50";
+    public  static final String     PROGRAM_VERSION = "1.60";
     
     public  static final String     LEFT            = "left";
     public  static final String     TOP             = "top";
@@ -115,7 +101,12 @@ package com.powersurgepub.psrenamer;
       folderField.setText (System.getProperty ("user.dir"));
     }
     
-    aboutWindow = new AboutWindow ();
+    aboutWindow = new AboutWindow (
+      false,   // load from disk 
+      true,    // browserLauncher2 used
+      false,   // jxl used
+      false,   // pegdown used,
+      "2003"); // copyRightYearFrom
     
     setBounds (
         UserPrefs.getShared(PROGRAM_NAME).getPrefAsInt (LEFT, LEFT_DEFAULT),
