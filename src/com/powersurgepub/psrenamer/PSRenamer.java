@@ -106,6 +106,8 @@ package com.powersurgepub.psrenamer;
       true,    // browserLauncher2 used
       false,   // jxl used
       false,   // pegdown used,
+      false,   // xerces used
+      false,   // saxon used
       "2003"); // copyRightYearFrom
     
     setBounds (
