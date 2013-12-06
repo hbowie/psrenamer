@@ -103,7 +103,6 @@ package com.powersurgepub.psrenamer;
     
     aboutWindow = new AboutWindow (
       false,   // load from disk 
-      true,    // browserLauncher2 used
       false,   // jxl used
       false,   // pegdown used,
       false,   // xerces used
