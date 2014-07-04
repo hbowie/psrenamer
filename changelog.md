@@ -55,8 +55,3 @@
 
     Initial release of a new program that will allow the user to rename a group of files all at once. Program has a user-friendly interface and allows one or more sections of the file name to be searched for a matching string, and then will modify the file name in or around the matching string.
 
-
-
-
-
-
