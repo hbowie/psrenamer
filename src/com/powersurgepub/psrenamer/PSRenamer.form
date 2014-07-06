@@ -31,58 +31,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Help"/>
           </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="helpProgramHistoryMenuItem">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Program History"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="helpProgramHistoryMenuItemActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="helpMenuItem">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="User Guide"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="helpMenuItemActionPerformed"/>
-              </Events>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="helpMenuItem.setAccelerator (KeyStroke.getKeyStroke (KeyEvent.VK_H,&#xa;        Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));"/>
-              </AuxValues>
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="helpCheckForUpdatesMenuItem">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Check for Updates..."/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="helpCheckForUpdatesMenuItemActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="helpHomePageMenuItem">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="PSRenamer Home Page"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="helpHomePageMenuItemActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="helpReduceWindowSizeMenuItem">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Reduce Window Size"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="helpReduceWindowSizeMenuItemActionPerformed"/>
-              </Events>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="helpReduceWindowSizeMenuItem.setAccelerator (KeyStroke.getKeyStroke (KeyEvent.VK_W,&#xa;        Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));"/>
-              </AuxValues>
-            </MenuItem>
-          </SubComponents>
         </Menu>
       </SubComponents>
     </Menu>

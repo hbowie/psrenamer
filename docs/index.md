@@ -39,12 +39,6 @@
     </li>
     <li>
       <a href="#user-interface">User Interface</a>
-      <ul>
-        <li>
-          <a href="#textmerge-sort">TextMerge Sort</a>
-        </li>
-      </ul>
-
     </li>
   </ul>
 
@@ -176,64 +170,6 @@ Action
 Details
 :    The results of pressing the Preview, Rename or Undo buttons will be shown here, along with any error messages. Files will not be renamed if the new name of the file already exists, unless the new name is to be renamed as well, in which case the sequence of renames will proceed in an order that will allow the collisions to be renamed first.
 
-<>if  eq yes ?>
-
-<h3 id="textmerge-sort">TextMerge Sort</h3>
-
-
-This tab allows the user to sort the data that has been input. Sorting is accomplished by using the following buttons that appear on this tab.
-
-<h4 id="field-name">Field Name</h4>
-
-
-This is a drop down list of all the columns in your data. Select the next field name on which you wish to sort, by starting with the most significant fields and proceeding to less significance.
-
-<h4 id="sort-sequence">Sort Sequence</h4>
-
-
-This is a drop down list. Pick either ascending (lower values towards the top, higher values towards the bottom) or descending. This sequence applies to the currently selected field name (see above).
-
-<h4 id="add">Add</h4>
-
-
-Pressing this button will add the field and sequence currently specified to the current sort parameters being built. The sort parameters added will appear in the text area shown below on this tab. After pressing the Add button, the user may go back and specify additional fields to be used in the sort criteria.
-
-<h4 id="clear">Clear</h4>
-
-
-Pressing this button will clear the sort parameters being built, so that you can start over.
-
-<h4 id="set">Set</h4>
-
-
-Once your desired sort parameters have been completely built, by pressing the Add button one or more times, you must press the Set button to cause your parameters to be applied to the data you are currently processing.
-
-<h4 id="combine">Combine</h4>
-
-
-After setting the desired sort sequence, you may optionally press this button to combine records with duplicate sort keys. The following buttons allow you to adjust the parameters controlling the combination process.
-
-<h4 id="tolerance-for-data-loss">Tolerance for Data Loss</h4>
-
-
-Record combination can be done with varying degrees of tolerance for data loss. Select one of the following radio buttons.
-
-* No Data Loss &#8212; Records will only be combined if data (non-key) fields are identical, or if one of the two corresponding values is blank (in which case the non-blank value will be preserved in the resulting combined record).
-* Later Records Override Earlier &#8212; If you are merging two input files, and one is known to carry more current data, then you can specify which file is the more current with this button or the next. This button will cause files merged later to be treated as more current.
-* Earlier Records Override Later &#8212; Similar to prior button, but with files merged earlier taking precedence over later ones.
-* Combine Fields Where Allowed &#8212; If the data dictionary allows fields to be concatenated, then this radio button indicates that concatenation may take place. This may be appropriate for a comment field.
-
-
-<h4 id="minimum-number-of-lossless-fields">Minimum Number of Lossless Fields</h4>
-
-
-If you specify some data loss to be acceptable, then this field may be used to specify a minimum number of data (non-key) fields that must be lossless (equal or one blank) before combination will be allowed to take place. This should be used if the sort keys are not guaranteed to establish uniqueness. Specifying a non-zero value here may help to prevent completely disparate records from being inadvertently combined. For example, names can be used to identify people, but two different people may have the same name.
-
-Increment (+)
-:    Use this button to increase the minimum number of lossless fields.
-
-Decrement (-)
-:    Use this button to decrease the minimum number of lossless fields. Zero is the smallest allowable value.
 
 [java]:       http://www.java.com/
 [pspub]:      http://www.powersurgepub.com/
