@@ -171,6 +171,8 @@ Details
 :    The results of pressing the Preview, Rename or Undo buttons will be shown here, along with any error messages. Files will not be renamed if the new name of the file already exists, unless the new name is to be renamed as well, in which case the sequence of renames will proceed in an order that will allow the collisions to be renamed first.
 
 
+
+
 [java]:       http://www.java.com/
 [pspub]:      http://www.powersurgepub.com/
 [downloads]:  http://www.powersurgepub.com/downloads.html
