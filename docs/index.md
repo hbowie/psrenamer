@@ -51,7 +51,6 @@
 PSRenamer is an application with a graphical interface that will easily rename a group of files for you. You can change file extensions, or any part of the file name. You can also assign a series of sequentially numbered file names, or replace certain characters with others. Preview and Undo functions are available. The files to be renamed must all reside in the top level of an existing folder.
 
 
-
 <h2 id="getting-started">Getting Started</h2>
 
 
